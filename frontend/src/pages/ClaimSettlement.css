@@ -1,0 +1,84 @@
+.claimSettlement{
+
+    padding:30px;
+    background:#f5f7fa;
+    min-height:100vh;
+
+}
+
+.claimSettlement h2{
+
+    margin-bottom:20px;
+    color:#003366;
+
+}
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+
+}
+
+table th{
+
+    background:#003366;
+    color:white;
+    padding:12px;
+
+}
+
+table td{
+
+    padding:10px;
+    border:1px solid #ddd;
+    text-align:center;
+
+}
+
+button{
+
+    background:#1976d2;
+    color:white;
+    border:none;
+    padding:8px 16px;
+    cursor:pointer;
+    border-radius:5px;
+
+}
+
+button:hover{
+
+    background:#125ea7;
+
+}
+
+.settlementCard{
+
+    margin-top:30px;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+
+}
+
+.settlementCard p{
+
+    margin:10px 0;
+
+}
+
+.approveBtn{
+
+    margin-top:20px;
+    background:green;
+
+}
+
+.approveBtn:hover{
+
+    background:darkgreen;
+
+}

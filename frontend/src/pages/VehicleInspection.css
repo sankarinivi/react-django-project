@@ -1,0 +1,78 @@
+.inspection-container {
+
+    width: 500px;
+    margin: 40px auto;
+    padding: 25px;
+
+    background:white;
+    border-radius:10px;
+
+    box-shadow:0 0 10px #ccc;
+
+}
+
+
+.inspection-container h2 {
+
+    text-align:center;
+    margin-bottom:20px;
+
+}
+
+
+.inspection-container label {
+
+    display:block;
+    margin-top:15px;
+    font-weight:bold;
+
+}
+
+
+.inspection-container input,
+.inspection-container select,
+.inspection-container textarea {
+
+
+    width:100%;
+    padding:10px;
+
+    margin-top:5px;
+
+    border:1px solid #ccc;
+    border-radius:5px;
+
+}
+
+
+.inspection-container textarea {
+
+    height:100px;
+    resize:none;
+
+}
+
+
+.inspection-container button {
+
+    width:100%;
+    margin-top:20px;
+
+    padding:12px;
+
+    background:#0d6efd;
+    color:white;
+
+    border:none;
+    border-radius:5px;
+
+    cursor:pointer;
+
+}
+
+
+.inspection-container button:hover {
+
+    background:#084298;
+
+}

@@ -1,0 +1,43 @@
+.completed-container {
+    width: 95%;
+    margin: 30px auto;
+}
+
+.completed-container h2 {
+    text-align: center;
+    color: #1565c0;
+    margin-bottom: 20px;
+}
+
+.completed-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+}
+
+.completed-table th {
+    background: #1565c0;
+    color: white;
+    padding: 12px;
+}
+
+.completed-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.completed-table tr:hover {
+    background: #f5f5f5;
+}
+
+.completed-table a {
+    color: #1565c0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.completed-table a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,139 @@
+/* ===========================
+   View Survey Report
+=========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f4f7fb;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.view-report-container {
+  width: 95%;
+  max-width: 1400px;
+  margin: 35px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.view-report-container h2 {
+  text-align: center;
+  color: #0b3d91;
+  margin-bottom: 25px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* ===========================
+   Table
+=========================== */
+
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.report-table thead {
+  background: #0b3d91;
+  color: #fff;
+}
+
+.report-table th {
+  padding: 14px;
+  font-size: 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.report-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+
+.report-table tbody tr:nth-child(even) {
+  background: #f8f9fc;
+}
+
+.report-table tbody tr:hover {
+  background: #e8f1ff;
+  transition: 0.3s;
+}
+
+/* ===========================
+   Amount Columns
+=========================== */
+
+.report-table td:nth-child(6),
+.report-table td:nth-child(7),
+.report-table td:nth-child(8) {
+  color: green;
+  font-weight: bold;
+}
+
+/* ===========================
+   Status Badge
+=========================== */
+
+.status-approved {
+  background: #28a745;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.status-pending {
+  background: orange;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.status-rejected {
+  background: crimson;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* ===========================
+   No Data
+=========================== */
+
+.no-data {
+  text-align: center;
+  padding: 30px;
+  color: #777;
+  font-size: 18px;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 1024px) {
+  .view-report-container {
+    overflow-x: auto;
+  }
+
+  .report-table {
+    min-width: 1200px;
+  }
+}

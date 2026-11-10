@@ -1,0 +1,125 @@
+.users-container {
+    width: 90%;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.users-container h2 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+/* Form */
+
+.user-form {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.user-form input,
+.user-form select {
+    width: 220px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.user-form button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.user-form button:hover {
+    background: #0056b3;
+}
+
+/* Table */
+
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.users-table th {
+    background: #003366;
+    color: white;
+    padding: 12px;
+}
+
+.users-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+}
+
+.users-table tr:nth-child(even) {
+    background: #f7f7f7;
+}
+
+.users-table tr:hover {
+    background: #eef5ff;
+}
+
+/* Buttons */
+
+.edit-btn {
+    background: orange;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.edit-btn:hover {
+    background: darkorange;
+}
+
+.delete-btn {
+    background: crimson;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: darkred;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .user-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .user-form input,
+    .user-form select,
+    .user-form button {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .users-table {
+        display: block;
+        overflow-x: auto;
+    }
+}

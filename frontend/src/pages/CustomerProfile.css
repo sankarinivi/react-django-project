@@ -1,0 +1,16 @@
+.customer-profile {
+    width: 500px;
+    margin: 40px auto;
+}
+
+.profile-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.profile-card p {
+    font-size: 18px;
+    margin: 15px 0;
+}

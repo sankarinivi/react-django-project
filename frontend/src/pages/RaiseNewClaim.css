@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f6f9;
+}
+
+.claim-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.claim-box{
+    width:450px;
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.claim-box h2{
+    text-align:center;
+    color:#003366;
+    margin-bottom:20px;
+}
+
+.claim-box label{
+    font-weight:bold;
+    display:block;
+    margin-bottom:5px;
+}
+
+.claim-box input,
+.claim-box textarea{
+    width:100%;
+    padding:10px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:15px;
+}
+
+.claim-box textarea{
+    resize:none;
+}
+
+.claim-box button{
+    width:100%;
+    padding:12px;
+    background:#1565c0;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.claim-box button:hover{
+    background:#0d47a1;
+}

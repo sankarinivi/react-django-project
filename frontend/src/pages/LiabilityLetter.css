@@ -1,0 +1,287 @@
+/* ==========================================
+   LIABILITY LETTER PAGE
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background:#eef3f9;
+}
+
+/* ==========================
+   Container
+========================== */
+
+.liability-container{
+    width:95%;
+    max-width:1400px;
+    margin:30px auto;
+}
+
+.liability-container h2{
+    text-align:center;
+    color:#003366;
+    margin-bottom:30px;
+    font-size:30px;
+    font-weight:bold;
+}
+
+/* ==========================
+   Layout
+========================== */
+
+.liability-wrapper{
+    display:grid;
+    grid-template-columns:400px 1fr;
+    gap:30px;
+    align-items:flex-start;
+}
+
+/* ==========================
+   Form
+========================== */
+
+.liability-form{
+    background:#ffffff;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.liability-form label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:8px;
+    font-weight:600;
+    color:#333;
+}
+
+.liability-form input,
+.liability-form select,
+.liability-form textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #d5d5d5;
+    border-radius:8px;
+    outline:none;
+    font-size:15px;
+    transition:.3s;
+}
+
+.liability-form input:focus,
+.liability-form select:focus,
+.liability-form textarea:focus{
+    border-color:#0d6efd;
+    box-shadow:0 0 6px rgba(13,110,253,.25);
+}
+
+.liability-form textarea{
+    resize:none;
+}
+
+/* ==========================
+   Claim Preview
+========================== */
+
+.claim-preview{
+    margin:20px 0;
+    background:#f0f7ff;
+    border-left:5px solid #0d6efd;
+    padding:15px;
+    border-radius:8px;
+}
+
+.claim-preview h3{
+    color:#003366;
+    margin-bottom:10px;
+}
+
+.claim-preview p{
+    margin:8px 0;
+    color:#444;
+}
+
+/* ==========================
+   Buttons
+========================== */
+
+.button-group{
+    margin-top:25px;
+}
+
+.save-btn{
+    width:100%;
+    background:#0d6efd;
+    color:white;
+    border:none;
+    padding:14px;
+    border-radius:8px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.save-btn:hover{
+    background:#084fc7;
+}
+
+.print-btn{
+    margin-top:25px;
+    background:#198754;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    transition:.3s;
+}
+
+.print-btn:hover{
+    background:#146c43;
+}
+
+/* ==========================
+   Letter Preview
+========================== */
+
+.letter-preview{
+    background:white;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.letter-preview h3{
+    text-align:center;
+    color:#003366;
+    margin-bottom:20px;
+}
+
+.letter-preview hr{
+    margin:20px 0;
+    border:none;
+    border-top:2px solid #003366;
+}
+
+.letter-preview p{
+    margin:10px 0;
+    line-height:1.8;
+    color:#333;
+}
+
+.letter-preview strong{
+    color:#003366;
+}
+
+/* ==========================
+   Table
+========================== */
+
+.letter-preview table{
+    width:100%;
+    border-collapse:collapse;
+    margin:25px 0;
+}
+
+.letter-preview table th{
+    background:#003366;
+    color:white;
+    padding:12px;
+    text-align:left;
+}
+
+.letter-preview table td{
+    border:1px solid #ddd;
+    padding:12px;
+}
+
+.letter-preview table tr:nth-child(even){
+    background:#f8f8f8;
+}
+
+/* ==========================
+   Signature
+========================== */
+
+.signature{
+    margin-top:60px;
+    text-align:right;
+}
+
+.signature p{
+    margin:4px 0;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media(max-width:1024px){
+
+    .liability-wrapper{
+        grid-template-columns:1fr;
+    }
+
+    .letter-preview{
+        margin-top:20px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .liability-container{
+        width:98%;
+    }
+
+    .liability-form,
+    .letter-preview{
+        padding:20px;
+    }
+
+    .liability-container h2{
+        font-size:24px;
+    }
+
+    .letter-preview table{
+        font-size:14px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .save-btn,
+    .print-btn{
+        width:100%;
+    }
+
+    .letter-preview{
+        padding:15px;
+    }
+
+}
+.mail-btn{
+    margin-top:25px;
+    margin-left:15px;
+    background:#dc3545;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.mail-btn:hover{
+    background:#bb2d3b;
+}

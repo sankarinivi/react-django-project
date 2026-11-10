@@ -1,0 +1,169 @@
+.vehicles-container {
+  padding: 30px;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+.vehicles-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+
+/* Form */
+
+.vehicle-form {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+.vehicle-form input,
+.vehicle-form select {
+
+  padding: 10px;
+  width: 220px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+
+}
+
+
+.vehicle-form button {
+
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+
+.vehicle-form button:hover {
+
+  background: #1d4ed8;
+
+}
+
+
+
+/* Table */
+
+.vehicles-table {
+
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+
+
+.vehicles-table th {
+
+  background: #1f2937;
+  color: white;
+  padding: 12px;
+  text-align: center;
+
+}
+
+
+.vehicles-table td {
+
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+
+}
+
+
+.vehicles-table tr:hover {
+
+  background: #f1f5f9;
+
+}
+
+
+
+/* Buttons */
+
+.edit-btn {
+
+  background: #16a34a;
+  color:white;
+  border:none;
+  padding:7px 14px;
+  margin-right:8px;
+  border-radius:5px;
+  cursor:pointer;
+
+}
+
+
+.edit-btn:hover {
+
+  background:#15803d;
+
+}
+
+
+
+.delete-btn {
+
+  background:#dc2626;
+  color:white;
+  border:none;
+  padding:7px 14px;
+  border-radius:5px;
+  cursor:pointer;
+
+}
+
+
+.delete-btn:hover {
+
+  background:#b91c1c;
+
+}
+
+
+
+/* Responsive */
+
+@media(max-width:900px){
+
+  .vehicle-form {
+
+    flex-direction:column;
+
+  }
+
+
+  .vehicle-form input,
+  .vehicle-form select {
+
+    width:100%;
+
+  }
+
+
+  .vehicles-table {
+
+    display:block;
+    overflow-x:auto;
+
+  }
+
+}
